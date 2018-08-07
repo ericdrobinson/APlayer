@@ -181,9 +181,6 @@ class APlayer {
                         </div>
                     </div>
                     <div class="aplayer-time">
-                        <span class="aplayer-time-inner">
-                            - <span class="aplayer-ptime">00:00</span> / <span class="aplayer-dtime">00:00</span>
-                        </span>
                         <div class="aplayer-volume-wrap">
                             <button type="button" class="aplayer-icon aplayer-icon-volume-down" ${this.isMobile ? 'style="display: none;"' : ''}>
                                ${this.getSVG('volume-down')}
@@ -194,6 +191,9 @@ class APlayer {
                                 </div>
                             </div>
                         </div>
+                        <span class="aplayer-time-inner">
+                            - <span class="aplayer-ptime">00:00</span> / <span class="aplayer-dtime">00:00</span>
+                        </span>
                         <button type="button" class="aplayer-icon aplayer-icon-mode">
                             ${this.getSVG(this.mode)}
                         </button>
